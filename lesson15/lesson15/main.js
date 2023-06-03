@@ -12,7 +12,8 @@ const numberLabel = document.getElementById("js-number-label");
 const nameBox = document.getElementById("js-name-box");
 const numberBox = document.getElementById("js-number-box");
 const namePattern =
-  /^[ぁ-んァ-ヶｱ-ﾝﾞﾟ一-龠a-zA-Zａ-ｚＡ-Ｚ]+[ぁ-んァ-ヶｱ-ﾝﾞﾟ一-龠a-zA-Zａ-ｚＡ-Ｚ\s]*$/; //https://arc-tech.hatenablog.com/entry/2021/01/20/105620
+  /^[ぁ-んァ-ヶｱ-ﾝﾞﾟ一-龠a-zA-Zａ-ｚＡ-Ｚ]+[ぁ-んァ-ヶｱ-ﾝﾞﾟ一-龠a-zA-Zａ-ｚＡ-Ｚ\s]*$/;
+//https://arc-tech.hatenablog.com/entry/2021/01/20/105620
 const numberPattern = /^-?\d+(\.?\d*)([eE][+-]?\d+)?$/;
 const url = "https://mocki.io/v1/1c058349-634e-462a-ad37-14f135e59b99";
 
@@ -189,7 +190,7 @@ function invalidInput(errorMessage) {
 }
 
 function validInput() {
-  promptMessage.textContent = "入力後ボタンを押してください";
+  promptMessage.textContent = "入力後、取得ボタンを押してね";
   promptMessage.style.color = "black";
   fetchButton.disabled = false;
 }
