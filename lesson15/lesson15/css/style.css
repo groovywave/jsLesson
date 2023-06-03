@@ -1,0 +1,76 @@
+
+body {
+  font-size: 14px;
+  user-select: none;
+}
+
+ul {
+  pointer-events: none;
+}
+
+button {
+  cursor: pointer;
+  margin: 10px auto;
+}
+
+input{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+}
+
+.open-button {
+  display: block;
+  width: 200px;
+  padding: 12px 0;
+  margin: 16px auto 0;
+}
+
+.mask {
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+}
+
+.modal {
+  text-align: center;
+  justify-content: center;
+  background: #fff;
+  width: 200px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  opacity: 0.8;
+  z-index: 2;
+}
+
+.back-button {
+  display: block;
+  width: 100px;
+  padding: 12px 0;
+  margin: 16px auto 0;
+}
+
+.text-in-modal { 
+  width: 200px;
+  margin: 0 0 20px;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js-lesson</title>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <ul id="js-ul"></ul>
+    <div id="js-modal" class="modal hidden" role="dialog">
+      <form method="POST">
+        <p id="js-prompt-message" class="text-in-modal">
+          入力後、取得ボタンを押してね
+        </p>
+        <label for="js-name-box" id="js-name-label">名前</label>
+        <input type="text" id="js-name-box" placeholder="名前を入力ください" />
+        <label for="js-number-box" id="js-number-label">数字</label>
+        <input
+          type="number"
+          id="js-number-box"
+          placeholder="半角数値を入力ください"
+        />
+        <div class="button-container">
+          <button id="js-fetch-button" type="button" disabled>取　得</button>
+          <button id="js-close-button" type="button">閉じる</button>
+        </div>
+      </form>
+    </div>
+    <button id="js-open-button" class="open-button" type="button">
+      情報の取得はこちら
+    </button>
+    <button id="js-back-button" class="back-button hidden" type="button">
+      戻る
+    </button>
+    <div id="js-mask" class="mask hidden"></div>
+  </body>
+</html>
